@@ -1,0 +1,55 @@
+<?
+include('def.php');
+$ua = mb_strtolower($_SERVER['HTTP_USER_AGENT']);
+?>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<?include('_meta.html')?>
+	<link rel="stylesheet" href="<?=DIRECTORY?>css/common.css?date=<?=date('YmdHis')?>">
+	<link rel="stylesheet" href="<?=DIRECTORY?>css/index.css?date=<?=date('YmdHis')?>">
+
+	<? if(strpos($ua,'lighthouse') === false){ ?>
+
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="js/index.js?date=<?=date('YmdHis')?>"></script>
+
+		<?//add gtag?>
+	<? } ?>
+
+</head>
+
+<header>
+	<div id="toggle_menu" class="toggle-icon open"></div>
+	<h1><a href="<?=DOMAIN?>"><?=SITENAME?></a></h1>
+</header>
+
+<nav class="menu-wrap">
+	<ul>
+		<li><a href="<?=DOMAIN?>">TOP</a></li>
+		<li><a id="link" data-target="service" href="#">SERVICE</a></li>
+		<li><a id="link" data-target="company" href="#">COMPANY</a></li>
+		<li><a href="mailto:test@test-mail.test">CONTACT</a></li>
+		<li><a id="link" data-target="access" href="#">ACCESS</a></li>
+		<li><a id="link" data-target="recruit" href="#">RECRUIT</a></li>
+	</ul>
+</nav>
+
+<div class="side-menu-wrap">
+
+	<ul class="menu-list">
+		<li><a href="<?=DOMAIN?>">TOP</a></li>
+		<li><a id="link" data-target="service" href="#">SERVICE</a></li>
+		<li><a id="link" data-target="company" href="#">COMPANY</a></li>
+		<li><a href="mailto:test@test-mail.test">CONTACT</a></li>
+		<li><a id="link" data-target="access" href="#">ACCESS</a></li>
+		<li><a id="link" data-target="recruit" href="#">RECRUIT</a></li>
+	</ul>
+</div>
+
+<body>
+
+	<main>

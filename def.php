@@ -1,0 +1,10 @@
+<?
+ini_set('date.timezone','Asia/Tokyo');
+ini_set('log_errors','On');//開発中のみ
+define('DIRECTORY','/demo/');
+define("DOMAIN",'https://160.16.139.140/demo/');
+define("DESCRIPTION",'サイト概要');
+define("KEYWORDS",'検索ワード1,検索ワード2');
+define("SITENAME",'DEMO-SITE');
+define("MAIL",'demo@demo-demo.jp');
+?>
