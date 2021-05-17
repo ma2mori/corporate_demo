@@ -97,12 +97,11 @@ footer {
 	cursor: pointer;
 	display: none;
 	background-image: url(https://160.16.139.140/demo/img/icon-open.svg);
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 	background-size: contain;
 	position: absolute;
-	top: 10px;
-	left: 10px;
+  margin-left: 10px;
 }
 
 .toggle-icon.open {
@@ -226,6 +225,8 @@ footer {
 		z-index: 1;
 		border-bottom: 1px solid #ddd;
 		box-shadow: 0px 8px 5px -5px rgb(0 0 0 / 16%);
+    display: flex;
+    align-items: center;
 	}
 
 	header h1 {
